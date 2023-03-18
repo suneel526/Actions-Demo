@@ -1,0 +1,47 @@
+/boot: boot information is stored in boot.
+
+/dev: all the attached devices such as pendrives etc info is stored here.
+
+/etc: all the configuration data is stored in this directory no binaries are stored in it
+no executable files stored here.
+
+/bin: this directory contains the essential user programs that must be present when the system is
+mounted in single-user mode. Contains important system programs and utlities such as the bash 
+shell are located in /bin.
+
+/sbin: this is similar to the /bin directory. It contains essential binaries that are generally 
+intended to be run by the root user for system administrarion.
+
+/home:This directory contains a home folder for each user. Example /home/suneel here user name is
+suneel.
+
+/lib & /lib64: it contains the libraries needed by the essential binaries in the /bin and /sbin folder.
+Libraries needed by the binaries in the /usr/bin folder are located in /usr/lib.
+
+/media & /mnt: /mnt is where sys admins mounted temp file system while using them. /media directory contains
+subdirectories where removable media devices inserted into the computer are mounted.
+
+/opt: this directory contains subdirectories for optional software packages. Additional packages
+will install into /opt directory.
+
+/proc: it contains special files like system memory utlization, cpus, speed, brands of cpu etc.
+
+/root: this directory is the home directory of the root user only root user can access this directory.
+
+/run: this directory is fairly new and gives applications a standard place to store transient 
+file they require like sockers and process IDs. The directory is the only solution for early-runtime-dir problem.
+
+/srv: it contains the data of service provided by the system. you can use /srv to store application data alternatively.
+
+/sys: it is modern linux distributions include a /sys directory as a virtual file system which stores and alloes modifications
+of the devices connected to the system. sysfs is used by programs such as udev to access device and device driver information.
+
+/usr: It contains applications and files used by users as opposed to applications and files used by 
+the system.The  /user directory also contains other directories for example architecture-independent 
+files like graphics are located in /usr/share/.
+
+/var: it contains log, spool, mail and temp files will be here. The contains of this file is expected to grow.
+
+/tmp: Systems temporary directory accessible by users and root. Stores temporary files for user and system till next boot.we should not use this to store important files in it.
+
+
